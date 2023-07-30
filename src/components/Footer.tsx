@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap gap-12">
-        <FooterColumn
+          <FooterColumn
             title={footerLinks[0].title}
             links={footerLinks[0].links}
           />

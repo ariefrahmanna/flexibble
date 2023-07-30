@@ -4,7 +4,7 @@ import Link from 'next/link';
 import AuthProviders from './AuthProviders';
 
 const NavBar = () => {
-  const session = {};
+  const session = null;
 
   return (
     <nav className="flexBetween navbar">
@@ -16,9 +16,7 @@ const NavBar = () => {
         <ul className="xl:flex hidden text-small gap-7">
           {NavLinks.map((link) => (
             <li key={link.key}>
-              <Link href={link.href}>
-                {link.text}
-              </Link>
+              <Link href={link.href}>{link.text}</Link>
             </li>
           ))}
         </ul>
