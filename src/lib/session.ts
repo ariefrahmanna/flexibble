@@ -19,7 +19,7 @@ export const authOptions: NextAuthOptions = {
       const encodedToken = jsonwebtoken.sign({
         ...token,
         iss: 'grafbase',
-        exp: Math.floor(Date.now() / 1000) + 60 * 60,
+        exp: Math.floor(Date.now() / 1000) + 60 * 60, // expires within an hour
       }, secret);
 
       return encodedToken;

@@ -47,7 +47,7 @@ export const createUserMutation = `
 				avatarUrl
 				description
 				githubUrl
-				linkedInUrl
+				linkedinUrl
 				id
 			}
 		}
@@ -113,7 +113,7 @@ export const getUserQuery = `
       avatarUrl
       description
       githubUrl
-      linkedInUrl
+      linkedinUrl
     }
   }
 `;
