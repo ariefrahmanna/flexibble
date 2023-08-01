@@ -50,7 +50,7 @@ export const authOptions: NextAuthOptions = {
 
         return newSession;
       } catch (error) {
-        console.log('Error retrieving user data:', session);
+        console.log('Error(retrieving user data):', error);
         return session;
       }
     },
@@ -70,7 +70,7 @@ export const authOptions: NextAuthOptions = {
 
         return true;
       } catch (error) {
-        console.log(error);
+        console.log('Error(user already exists):', error);
         return false;
       }
     },
