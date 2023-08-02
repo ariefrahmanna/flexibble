@@ -6,7 +6,7 @@ import { ProjectInterface } from '@/types';
 type ProjectSearch = {
   projectSearch: {
     edges: { node: ProjectInterface }[];
-    pageIndo: {
+    pageInfo: {
       hasPreviousPage: boolean;
       hasNextPage: boolean;
       startCursor: string;
